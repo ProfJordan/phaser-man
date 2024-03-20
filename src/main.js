@@ -1,6 +1,7 @@
 //import phaser
 import Phaser from 'phaser';
 import Title from './scenes/title';
+import MainGame from './scenes/main-game';
 
 
 const config = {
@@ -20,7 +21,7 @@ const config = {
         debug: false
       }
     },
-    scene: [Title] // We'll add more scenes here later
+    scene: [Title, MainGame] // We'll add more scenes here later
   }
   const game = new Phaser.Game(config)
   

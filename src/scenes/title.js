@@ -36,7 +36,8 @@ class Title extends Phaser.Scene
             duration: 800,
             yoyo: true,
             repeat: -1
-        })
+        });
+        phasermanImg1.on('pointerdown', () => this.scene.start('MainGame'));
 
     }
 }
